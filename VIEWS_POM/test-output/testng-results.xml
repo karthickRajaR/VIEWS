@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="65896" started-at="2020-03-19T12:20:43Z" finished-at="2020-03-19T12:21:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="65896" started-at="2020-03-19T12:20:43Z" finished-at="2020-03-19T12:21:49Z">
+      <class name="testCase.TC003_WO_Quote">
+        <test-method status="PASS" signature="runDrive()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="runDrive" is-config="true" duration-ms="13057" started-at="2020-03-19T17:50:44Z" finished-at="2020-03-19T17:50:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runDrive -->
+        <test-method status="PASS" signature="workToQuoteComment()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="workToQuoteComment" duration-ms="52812" started-at="2020-03-19T17:50:57Z" finished-at="2020-03-19T17:51:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- workToQuoteComment -->
+        <test-method status="PASS" signature="closeDrive()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="closeDrive" is-config="true" duration-ms="0" started-at="2020-03-19T17:51:49Z" finished-at="2020-03-19T17:51:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDrive -->
+      </class> <!-- testCase.TC003_WO_Quote -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="testCase.TC002_SearchProjectSite">
+        <methods>
+          <include name="closeDrive"/>
+          <include name="searchSiteId"/>
+          <include name="runDrive"/>
+        </methods>
+      </class> <!-- testCase.TC002_SearchProjectSite -->
+      <class name="testCase.TC001_SearchVPLSites">
+        <methods>
+          <include name="closeDrive"/>
+          <include name="runDrive"/>
+          <include name="searchSiteID"/>
+        </methods>
+      </class> <!-- testCase.TC001_SearchVPLSites -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
