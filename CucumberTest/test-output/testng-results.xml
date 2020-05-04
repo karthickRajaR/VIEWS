@@ -2,46 +2,44 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="101355" started-at="2020-03-10T10:20:49Z" finished-at="2020-03-10T10:22:30Z">
+  <suite name="Default suite" duration-ms="59897" started-at="2020-04-30T10:40:56Z" finished-at="2020-04-30T10:41:56Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TimeSheetRun@146ba0ac]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TimeSheetDate@146ba0ac]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="101355" started-at="2020-03-10T10:20:49Z" finished-at="2020-03-10T10:22:30Z">
-      <class name="runner.TimeSheetRun">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TimeSheetRun@146ba0ac]" name="setUpClass" is-config="true" duration-ms="416" started-at="2020-03-10T15:50:49Z" finished-at="2020-03-10T15:50:49Z">
+    <test name="Default test" duration-ms="59897" started-at="2020-04-30T10:40:56Z" finished-at="2020-04-30T10:41:56Z">
+      <class name="runner.TimeSheetDate">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TimeSheetDate@146ba0ac]" name="setUpClass" is-config="true" duration-ms="640" started-at="2020-04-30T16:10:56Z" finished-at="2020-04-30T16:10:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TimeSheetRun@146ba0ac]" name="feature" duration-ms="100692" started-at="2020-03-10T15:50:50Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-03-10T15:52:30Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TimeSheetDate@146ba0ac]" name="feature" duration-ms="58880" started-at="2020-04-30T16:10:57Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-04-30T16:11:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Time Sheet]]>
+                <![CDATA[Time Sheet for Date]]>
               </value>
             </param>
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=80.0.3987.132)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=81.0.4044.122)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'CIS20', ip: '10.77.21.54', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_241'
+System info: host: 'CIS20', ip: '192.168.1.91', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\karamach\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:24572}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 113d0582b70e42ab4c063d0eafdb8fc4]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\karamach\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:33394}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 99fbaa9bb31d5130db6c11bb0cb1abae]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=80.0.3987.132)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=81.0.4044.122)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'CIS20', ip: '10.77.21.54', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_241'
+System info: host: 'CIS20', ip: '192.168.1.91', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\karamach\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:24572}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 113d0582b70e42ab4c063d0eafdb8fc4
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\karamach\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:33394}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 99fbaa9bb31d5130db6c11bb0cb1abae
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -68,14 +66,13 @@ Session ID: 113d0582b70e42ab4c063d0eafdb8fc4
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
-  (Session info: chrome=80.0.3987.132)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=81.0.4044.122)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'CIS20', ip: '10.77.21.54', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_241'
+System info: host: 'CIS20', ip: '192.168.1.91', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\karamach\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:24572}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 113d0582b70e42ab4c063d0eafdb8fc4
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 81.0.4044.69 (6813546031a4b..., userDataDir: C:\Users\karamach\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:33394}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 99fbaa9bb31d5130db6c11bb0cb1abae
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -87,21 +84,20 @@ Session ID: 113d0582b70e42ab4c063d0eafdb8fc4
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:122)
-	at org.openqa.selenium.support.ui.Select.<init>(Select.java:44)
-	at steps.TimeSheetSteps.select_the_Next_project_Name_as_ProjectName(TimeSheetSteps.java:176)
-	at ?.When Select the Next project Name as Zion(src/main/java/feature/TimeSheet.feature:44)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:100)
+	at steps.TimeSheetSteps.enter_the_Break_time_as(TimeSheetSteps.java:251)
+	at ?.Given Enter the Break time as 1.00(src/main/java/feature/TimeSheetDate.feature:32)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TimeSheetRun@146ba0ac]" name="tearDownClass" is-config="true" duration-ms="50" started-at="2020-03-10T15:52:30Z" finished-at="2020-03-10T15:52:30Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TimeSheetDate@146ba0ac]" name="tearDownClass" is-config="true" duration-ms="96" started-at="2020-04-30T16:11:56Z" finished-at="2020-04-30T16:11:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.TimeSheetRun -->
+      </class> <!-- runner.TimeSheetDate -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

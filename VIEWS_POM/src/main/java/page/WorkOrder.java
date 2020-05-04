@@ -18,9 +18,12 @@ public class WorkOrder extends SpecifiedBaseMethod{
 	
 	
 	public WorkOrder enterFrame() {
-		
+		try {
 		WebElement iframe = driver.findElement(By.className("pageIframe"));
-		driver.switchTo().frame(iframe);
+		driver.switchTo().frame(iframe);}catch (Exception except){
+			System.out.println("FRAME NOT FOUND");
+		}
+		
 		return this;
 	}
 	

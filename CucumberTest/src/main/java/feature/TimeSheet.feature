@@ -10,19 +10,18 @@ Feature: Time Sheet
 
   @tag1
   Scenario Outline: Add In-Time TimeSheet
-    #Given Click on Timesheet
-    #And Click on Add Button
-    #When Enter the Time IN as <inTime>
-    #Then Click on TimeSheet Save button
-    #And Close the Pop-up
-    #And Click on leave Application
+    Given Click on Timesheet
+    And Click on Add Button
+    When Enter the Time IN as <inTime>
+    Then Click on TimeSheet Save button
+    And Close the Pop-up
+    And Click on leave Application
     Given Click on Timesheet
     And Click on Edit button
-    
-    Examples:
-    |inTime|
-    |9.22|
-    
+
+    Examples: 
+      | inTime |
+      |   9.00 |
 
   @tag2
   Scenario Outline: Add the Task
@@ -35,8 +34,8 @@ Feature: Time Sheet
     Then Click on Task Save button
 
     Examples: 
-      | ProjectName | TaskType   | MOR    | Task                    | Start   | End     |
-      | Zion        | QA Testing | TFS No | Scrum meeting for Views application and analysing the mail and TFS updates, mom | 9.30 am | 11.30 pm |
+      | ProjectName | TaskType   | MOR    | Task                | Start   | End      |
+      | Zion        | QA Testing | TFS No | Phone calls and GTM | 9.00 am | 10.00 am |
 
   @tag3
   Scenario Outline: Add the Next Task
@@ -50,9 +49,21 @@ Feature: Time Sheet
     Then Click on Next Task Save button
 
     Examples: 
-      | ProjectName | TaskType   | MOR    | Task                                                             | Start    | End      |
-      | Zion        | QA Testing | TFS No | Data Management  - PBI 71627 -Testing has been done in SIT & Prod for Test Suite : Data Management_PVT_20200310  | 02.00 am | 04.00 pm |
-      | Zion        | QA Testing | TFS No | Analysing v3.4.0                                 | 5.15 pm  | 7.00 pm  |
-      #| Zion        | QA Testing | TFS No | Bug ID 71337 has been created in TFS                                                                      | 11.00 am | 11.30 am |
-  #Scenario: 
-    #Then Close the Broser
+      | ProjectName | TaskType   | MOR    | Task                                         | Start    | End     |
+      | Zion        | QA Testing | TFS No | Reviewing TFS bugs in 3.4.3 snd 3.4.4        | 10.00 am | 2.00 pm |
+      | Zion        | QA Testing | TFS No | Analysing PBI 65659 and reviewing Test cases | 3.00 pm  | 7.00 pm |
+
+  #| Zion        | QA Testing | TFS No | Analysing and discussed with dev team for PBI 71693, 72366, 72351,               | 1.45 pm  | 7.00 pm  |
+  @tag4
+  Scenario Outline: Time Out
+    Given Enter the Break time as <Break>
+    And Enter the Out time as <Timeout>
+    Then Enter the Save button
+
+    Examples: 
+      | Break | Timeout |
+      |  1.00 | 7.00 pm |
+
+  @tag5
+  Scenario: 
+    Then Close the Broser

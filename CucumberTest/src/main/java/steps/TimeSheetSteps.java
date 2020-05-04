@@ -26,11 +26,11 @@ public class TimeSheetSteps {
 
 	FluentWait<WebDriver> wait;
 
-	public void waitForStaleEle(WebDriver driver, String locator) throws InterruptedException {
+	public void waitForStaleEle(WebDriver driver, WebElement locator) throws InterruptedException {
 		wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
 				.pollingEvery(Duration.ofMillis(1000)).ignoring(NoSuchElementException.class);
 		try {
-			wait.until(ExpectedConditions.stalenessOf(driver.findElement(By.xpath(locator))));
+			wait.until(ExpectedConditions.stalenessOf(locator));
 		} catch (Exception excep) {
 			Thread.sleep(1000);
 		}
@@ -38,7 +38,7 @@ public class TimeSheetSteps {
 
 	@Given("^Open the Browser$")
 	public void open_the_Browser() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -74,6 +74,14 @@ public class TimeSheetSteps {
 	public void click_on_Add_Button() throws Throwable {
 		driver.findElement(By.xpath("//input[@value='Add']")).click();
 	}
+	
+//	@When("^Enter the Date as (.*)$")
+//	public void enter_the_Date() throws Throwable {
+//		//driver.findElement(By.xpath("//input[contains(@id,'txtDate')]")).click();
+//		//driver.findElement(By.xpath("//input[contains(@id,'txtDate')]")).clear();
+//		//driver.findElement(By.xpath("//input[contains(@id,'txtDate')]")).sendKeys(Date);
+//		driver.findElement(By.xpath("//input[contains(@id,'txtDate')]")).se
+//	}
 
 	@When("^Enter the Time IN as (.*)$")
 	public void enter_the_Time_IN(String inTime) throws Throwable {
@@ -96,7 +104,7 @@ public class TimeSheetSteps {
 	@Given("^Click on Edit button$")
 	public void click_on_Edit_button() throws Throwable {
 
-		driver.findElement(By.xpath("(//tr[@class='gridHeaderBG']//following::input)[1]")).click();
+		driver.findElement(By.xpath("//tr[@class='gridHeaderBG']//following::input)[1]")).click();
 	}
 
 	@When("^Select the project Name as (.*)$")
@@ -151,15 +159,17 @@ public class TimeSheetSteps {
 
 	@Then("^Click on Task Save button$")
 	public void click_on_Task_Save_button() throws Throwable {
-
 		driver.findElement(By.xpath("//input[@title='Insert']")).click();
 	}
 
 	@Given("^Click on Add Task$")
 	public void click_on_Add_Task() throws Throwable {
-		waitForStaleEle(driver, "//input[@value='Add Task']");
+		waitForStaleEle(driver, driver.findElement(By.xpath("//input[@value='Add Task']")));
+		try {
 		driver.findElement(By.xpath("//input[@value='Add Task']")).click();
-	}
+		}catch(Exception except) {
+		driver.findElement(By.xpath("//input[@value='Add Task']")).click();
+	}}
 
 	// Next Steps
 
@@ -232,4 +242,35 @@ public class TimeSheetSteps {
 	public void close_the_Broser() throws Throwable {
 		driver.close();
 	}
-}
+	
+	//Time Out Steps
+	
+	@Given("^Enter the Break time as (.*)$")
+	public void enter_the_Break_time_as(String Break) throws InterruptedException {
+		waitForStaleEle(driver, driver.findElement(By.xpath("//input[contains(@id,'txtBreak')]")));
+	   driver.findElement(By.xpath("//input[contains(@id,'txtBreak')]")).sendKeys(Break);
+	    
+	}
+
+	@Given("^Enter the Out time as (.*)$")
+	public void enter_the_Out_time_as(String Timeout) {
+		try {
+		wait.until(ExpectedConditions.stalenessOf(driver.findElement(By.xpath("(//input[contains(@id,'txtTimeOut')])[1]"))));
+	 driver.findElement(By.xpath("(//input[contains(@id,'txtTimeOut')])[1]")).sendKeys(Timeout);} catch (Exception except) {
+		 driver.findElement(By.xpath("(//input[contains(@id,'txtTimeOut')])[1]")).sendKeys(Timeout);
+	 }
+	}
+
+	@Then("^Enter the Save button$")
+	public void enter_the_Save_button() throws Throwable {
+	driver.findElement(By.xpath("//input[contains(@value,'Save')]")).click();
+	}
+
+
+// Date
+
+@Given("^Click on Edit for Date$")
+public void click_on_Edit_for_Date() throws Throwable {
+	driver.findElement(By.xpath("((//tr[@class='gridHeaderBG']//following::input)[3])")).click();
+}}
+

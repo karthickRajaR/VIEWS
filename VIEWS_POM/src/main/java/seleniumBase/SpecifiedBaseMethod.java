@@ -64,7 +64,7 @@ public void parentwindow() {
 @BeforeMethod
 
  public void runDrive() throws InterruptedException {
-System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
  driver = new ChromeDriver();
  driver.manage().window().maximize();
  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

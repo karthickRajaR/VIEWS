@@ -1,12 +1,24 @@
 Feature: Login Page
 
     #Given Click on Add Task
-  @tag
+  
   Scenario: Login Page for timesheet
     #Given Click on Add Task
     
      #Then Close the Broser
      When Enter the Time IN as <inTime>
+      And Enter the Date as <Date>
+      
+        Scenario Outline: Time Out
+  Given Enter the Break time as <Break>
+  And Enter the Out time as <Time Out>
+  Then Enter the Save button
+  
+   Examples: 
+      | Break | Time Out |
+      |||
+  
+  
     #And Click on leave Application
      #When Select the Next project Name as <ProjectName>
     #And Select the Next Task type as <TaskType>

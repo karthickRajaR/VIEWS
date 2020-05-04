@@ -49,35 +49,35 @@ formatter.match({
   "location": "TimeSheetSteps.open_the_Browser()"
 });
 formatter.result({
-  "duration": 5409258958,
+  "duration": 17523189632,
   "status": "passed"
 });
 formatter.match({
   "location": "TimeSheetSteps.enter_the_Timesheet_URL()"
 });
 formatter.result({
-  "duration": 4143093866,
+  "duration": 1678139160,
   "status": "passed"
 });
 formatter.match({
   "location": "TimeSheetSteps.enter_the_Timesheet_Username()"
 });
 formatter.result({
-  "duration": 110287718,
+  "duration": 638324967,
   "status": "passed"
 });
 formatter.match({
   "location": "TimeSheetSteps.enter_the_Timesheet_Password()"
 });
 formatter.result({
-  "duration": 118083630,
+  "duration": 298672080,
   "status": "passed"
 });
 formatter.match({
   "location": "TimeSheetSteps.click_on_Timesheet_Login()"
 });
 formatter.result({
-  "duration": 94406165,
+  "duration": 186814219,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -95,32 +95,36 @@ formatter.scenarioOutline({
   ]
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 13,
-      "value": "#Given Click on Timesheet"
-    },
-    {
-      "line": 14,
-      "value": "#And Click on Add Button"
-    },
-    {
-      "line": 15,
-      "value": "#When Enter the Time IN as \u003cinTime\u003e"
-    },
-    {
-      "line": 16,
-      "value": "#Then Click on TimeSheet Save button"
-    },
-    {
-      "line": 17,
-      "value": "#And Close the Pop-up"
-    },
-    {
-      "line": 18,
-      "value": "#And Click on leave Application"
-    }
-  ],
+  "line": 13,
+  "name": "Click on Timesheet",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 14,
+  "name": "Click on Add Button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "Enter the Time IN as \u003cinTime\u003e",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 16,
+  "name": "Click on TimeSheet Save button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 17,
+  "name": "Close the Pop-up",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "Click on leave Application",
+  "keyword": "And "
+});
+formatter.step({
   "line": 19,
   "name": "Click on Timesheet",
   "keyword": "Given "
@@ -145,7 +149,7 @@ formatter.examples({
     },
     {
       "cells": [
-        "9.22"
+        "9.00"
       ],
       "line": 24,
       "id": "time-sheet;add-in-time-timesheet;;2"
@@ -168,32 +172,39 @@ formatter.scenario({
   ]
 });
 formatter.step({
-  "comments": [
-    {
-      "line": 13,
-      "value": "#Given Click on Timesheet"
-    },
-    {
-      "line": 14,
-      "value": "#And Click on Add Button"
-    },
-    {
-      "line": 15,
-      "value": "#When Enter the Time IN as \u003cinTime\u003e"
-    },
-    {
-      "line": 16,
-      "value": "#Then Click on TimeSheet Save button"
-    },
-    {
-      "line": 17,
-      "value": "#And Close the Pop-up"
-    },
-    {
-      "line": 18,
-      "value": "#And Click on leave Application"
-    }
+  "line": 13,
+  "name": "Click on Timesheet",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 14,
+  "name": "Click on Add Button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 15,
+  "name": "Enter the Time IN as 9.00",
+  "matchedColumns": [
+    0
   ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 16,
+  "name": "Click on TimeSheet Save button",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 17,
+  "name": "Close the Pop-up",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "Click on leave Application",
+  "keyword": "And "
+});
+formatter.step({
   "line": 19,
   "name": "Click on Timesheet",
   "keyword": "Given "
@@ -207,18 +218,66 @@ formatter.match({
   "location": "TimeSheetSteps.click_on_Timesheet()"
 });
 formatter.result({
-  "duration": 2145325857,
+  "duration": 3970029745,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TimeSheetSteps.click_on_Add_Button()"
+});
+formatter.result({
+  "duration": 872134219,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "9.00",
+      "offset": 21
+    }
+  ],
+  "location": "TimeSheetSteps.enter_the_Time_IN(String)"
+});
+formatter.result({
+  "duration": 703030013,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TimeSheetSteps.click_on_TimeSheet_Save_button()"
+});
+formatter.result({
+  "duration": 3237502823,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TimeSheetSteps.close_the_Pop_up()"
+});
+formatter.result({
+  "duration": 546009767,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TimeSheetSteps.click_on_leave_Application()"
+});
+formatter.result({
+  "duration": 3945582218,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TimeSheetSteps.click_on_Timesheet()"
+});
+formatter.result({
+  "duration": 1111126897,
   "status": "passed"
 });
 formatter.match({
   "location": "TimeSheetSteps.click_on_Edit_button()"
 });
 formatter.result({
-  "duration": 700658392,
+  "duration": 803854985,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 28,
+  "line": 27,
   "name": "Add the Task",
   "description": "",
   "id": "time-sheet;add-the-task",
@@ -226,48 +285,48 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 27,
+      "line": 26,
       "name": "@tag2"
     }
   ]
 });
 formatter.step({
-  "line": 29,
+  "line": 28,
   "name": "Select the project Name as \u003cProjectName\u003e",
   "keyword": "When "
 });
 formatter.step({
-  "line": 30,
+  "line": 29,
   "name": "Select the Task type as \u003cTaskType\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "line": 31,
+  "line": 30,
   "name": "Select the Mode of Request as \u003cMOR\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "line": 32,
+  "line": 31,
   "name": "Enter the Task Name as \u003cTask\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "line": 33,
+  "line": 32,
   "name": "Enter the Start Time as \u003cStart\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "line": 34,
+  "line": 33,
   "name": "Enter the End Time as \u003cEnd\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "line": 35,
+  "line": 34,
   "name": "Click on Task Save button",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 37,
+  "line": 36,
   "name": "",
   "description": "",
   "id": "time-sheet;add-the-task;",
@@ -281,7 +340,7 @@ formatter.examples({
         "Start",
         "End"
       ],
-      "line": 38,
+      "line": 37,
       "id": "time-sheet;add-the-task;;1"
     },
     {
@@ -289,18 +348,18 @@ formatter.examples({
         "Zion",
         "QA Testing",
         "TFS No",
-        "Scrum meeting for Views application and analysing the mail and TFS updates, mom",
-        "9.30 am",
-        "11.30 pm"
+        "Phone calls and GTM",
+        "9.00 am",
+        "10.00 am"
       ],
-      "line": 39,
+      "line": 38,
       "id": "time-sheet;add-the-task;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 39,
+  "line": 38,
   "name": "Add the Task",
   "description": "",
   "id": "time-sheet;add-the-task;;2",
@@ -308,13 +367,13 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 27,
+      "line": 26,
       "name": "@tag2"
     }
   ]
 });
 formatter.step({
-  "line": 29,
+  "line": 28,
   "name": "Select the project Name as Zion",
   "matchedColumns": [
     0
@@ -322,7 +381,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 30,
+  "line": 29,
   "name": "Select the Task type as QA Testing",
   "matchedColumns": [
     1
@@ -330,7 +389,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 31,
+  "line": 30,
   "name": "Select the Mode of Request as TFS No",
   "matchedColumns": [
     2
@@ -338,31 +397,31 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 32,
-  "name": "Enter the Task Name as Scrum meeting for Views application and analysing the mail and TFS updates, mom",
+  "line": 31,
+  "name": "Enter the Task Name as Phone calls and GTM",
   "matchedColumns": [
     3
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 33,
-  "name": "Enter the Start Time as 9.30 am",
+  "line": 32,
+  "name": "Enter the Start Time as 9.00 am",
   "matchedColumns": [
     4
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 34,
-  "name": "Enter the End Time as 11.30 pm",
+  "line": 33,
+  "name": "Enter the End Time as 10.00 am",
   "matchedColumns": [
     5
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 35,
+  "line": 34,
   "name": "Click on Task Save button",
   "keyword": "Then "
 });
@@ -376,7 +435,7 @@ formatter.match({
   "location": "TimeSheetSteps.select_the_project_Name(String)"
 });
 formatter.result({
-  "duration": 454085880,
+  "duration": 717204238,
   "status": "passed"
 });
 formatter.match({
@@ -389,7 +448,7 @@ formatter.match({
   "location": "TimeSheetSteps.select_the_Task_type(String)"
 });
 formatter.result({
-  "duration": 168712891,
+  "duration": 208822403,
   "status": "passed"
 });
 formatter.match({
@@ -402,57 +461,57 @@ formatter.match({
   "location": "TimeSheetSteps.select_the_Mode_of_Request(String)"
 });
 formatter.result({
-  "duration": 170667018,
+  "duration": 164057266,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Scrum meeting for Views application and analysing the mail and TFS updates, mom",
+      "val": "Phone calls and GTM",
       "offset": 23
     }
   ],
   "location": "TimeSheetSteps.enter_the_Task_Name(String)"
 });
 formatter.result({
-  "duration": 1113504453,
+  "duration": 472831253,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "9.30 am",
+      "val": "9.00 am",
       "offset": 24
     }
   ],
   "location": "TimeSheetSteps.enter_the_Start_Time(String)"
 });
 formatter.result({
-  "duration": 1229341779,
+  "duration": 1231663831,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "11.30 pm",
+      "val": "10.00 am",
       "offset": 22
     }
   ],
   "location": "TimeSheetSteps.enter_the_End_Time(String)"
 });
 formatter.result({
-  "duration": 2244293046,
+  "duration": 2470916572,
   "status": "passed"
 });
 formatter.match({
   "location": "TimeSheetSteps.click_on_Task_Save_button()"
 });
 formatter.result({
-  "duration": 128518553,
+  "duration": 180852701,
   "status": "passed"
 });
 formatter.scenarioOutline({
-  "line": 42,
+  "line": 41,
   "name": "Add the Next Task",
   "description": "",
   "id": "time-sheet;add-the-next-task",
@@ -460,53 +519,53 @@ formatter.scenarioOutline({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 41,
+      "line": 40,
       "name": "@tag3"
     }
   ]
 });
 formatter.step({
-  "line": 43,
+  "line": 42,
   "name": "Click on Add Task",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 44,
+  "line": 43,
   "name": "Select the Next project Name as \u003cProjectName\u003e",
   "keyword": "When "
 });
 formatter.step({
-  "line": 45,
+  "line": 44,
   "name": "Select the Next Task type as \u003cTaskType\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "line": 46,
+  "line": 45,
   "name": "Select the Next Mode of Request as \u003cMOR\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "line": 47,
+  "line": 46,
   "name": "Enter the Next Task Name as \u003cTask\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "line": 48,
+  "line": 47,
   "name": "Enter the Next Start Time as \u003cStart\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "line": 49,
+  "line": 48,
   "name": "Enter the Next End Time as \u003cEnd\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "line": 50,
+  "line": 49,
   "name": "Click on Next Task Save button",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 52,
+  "line": 51,
   "name": "",
   "description": "",
   "id": "time-sheet;add-the-next-task;",
@@ -520,7 +579,7 @@ formatter.examples({
         "Start",
         "End"
       ],
-      "line": 53,
+      "line": 52,
       "id": "time-sheet;add-the-next-task;;1"
     },
     {
@@ -528,11 +587,11 @@ formatter.examples({
         "Zion",
         "QA Testing",
         "TFS No",
-        "Data Management  - PBI 71627 -Testing has been done in SIT \u0026 Prod for Test Suite : Data Management_PVT_20200310",
-        "02.00 am",
-        "04.00 pm"
+        "Reviewing TFS bugs in 3.4.3 snd 3.4.4",
+        "10.00 am",
+        "2.00 pm"
       ],
-      "line": 54,
+      "line": 53,
       "id": "time-sheet;add-the-next-task;;2"
     },
     {
@@ -540,18 +599,18 @@ formatter.examples({
         "Zion",
         "QA Testing",
         "TFS No",
-        "Analysing v3.4.0",
-        "5.15 pm",
+        "Analysing PBI 65659 and reviewing Test cases",
+        "3.00 pm",
         "7.00 pm"
       ],
-      "line": 55,
+      "line": 54,
       "id": "time-sheet;add-the-next-task;;3"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 54,
+  "line": 53,
   "name": "Add the Next Task",
   "description": "",
   "id": "time-sheet;add-the-next-task;;2",
@@ -559,18 +618,18 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 41,
+      "line": 40,
       "name": "@tag3"
     }
   ]
 });
 formatter.step({
-  "line": 43,
+  "line": 42,
   "name": "Click on Add Task",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 44,
+  "line": 43,
   "name": "Select the Next project Name as Zion",
   "matchedColumns": [
     0
@@ -578,7 +637,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 45,
+  "line": 44,
   "name": "Select the Next Task type as QA Testing",
   "matchedColumns": [
     1
@@ -586,7 +645,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 46,
+  "line": 45,
   "name": "Select the Next Mode of Request as TFS No",
   "matchedColumns": [
     2
@@ -594,31 +653,31 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 47,
-  "name": "Enter the Next Task Name as Data Management  - PBI 71627 -Testing has been done in SIT \u0026 Prod for Test Suite : Data Management_PVT_20200310",
+  "line": 46,
+  "name": "Enter the Next Task Name as Reviewing TFS bugs in 3.4.3 snd 3.4.4",
   "matchedColumns": [
     3
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 48,
-  "name": "Enter the Next Start Time as 02.00 am",
+  "line": 47,
+  "name": "Enter the Next Start Time as 10.00 am",
   "matchedColumns": [
     4
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 49,
-  "name": "Enter the Next End Time as 04.00 pm",
+  "line": 48,
+  "name": "Enter the Next End Time as 2.00 pm",
   "matchedColumns": [
     5
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 50,
+  "line": 49,
   "name": "Click on Next Task Save button",
   "keyword": "Then "
 });
@@ -626,7 +685,7 @@ formatter.match({
   "location": "TimeSheetSteps.click_on_Add_Task()"
 });
 formatter.result({
-  "duration": 31693730283,
+  "duration": 32309046266,
   "status": "passed"
 });
 formatter.match({
@@ -639,7 +698,7 @@ formatter.match({
   "location": "TimeSheetSteps.select_the_Next_project_Name_as_ProjectName(String)"
 });
 formatter.result({
-  "duration": 627448461,
+  "duration": 721916413,
   "status": "passed"
 });
 formatter.match({
@@ -652,7 +711,7 @@ formatter.match({
   "location": "TimeSheetSteps.select_the_Next_Task_type_as_TaskType(String)"
 });
 formatter.result({
-  "duration": 207351048,
+  "duration": 448144958,
   "status": "passed"
 });
 formatter.match({
@@ -665,57 +724,57 @@ formatter.match({
   "location": "TimeSheetSteps.select_the_Next_Mode_of_Request_as_MOR(String)"
 });
 formatter.result({
-  "duration": 30037173784,
+  "duration": 30125565372,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Data Management  - PBI 71627 -Testing has been done in SIT \u0026 Prod for Test Suite : Data Management_PVT_20200310",
+      "val": "Reviewing TFS bugs in 3.4.3 snd 3.4.4",
       "offset": 28
     }
   ],
   "location": "TimeSheetSteps.enter_the_Next_Task_Name_as_Task(String)"
 });
 formatter.result({
-  "duration": 1368643286,
+  "duration": 738469589,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "02.00 am",
+      "val": "10.00 am",
       "offset": 29
     }
   ],
   "location": "TimeSheetSteps.enter_the_Next_Start_Time_as_Start(String)"
 });
 formatter.result({
-  "duration": 1166163939,
+  "duration": 1269601394,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "04.00 pm",
+      "val": "2.00 pm",
       "offset": 27
     }
   ],
   "location": "TimeSheetSteps.enter_the_Next_End_Time_as_End(String)"
 });
 formatter.result({
-  "duration": 2302255693,
+  "duration": 2295126866,
   "status": "passed"
 });
 formatter.match({
   "location": "TimeSheetSteps.click_on_Next_Task_Save_button()"
 });
 formatter.result({
-  "duration": 154848995,
+  "duration": 143173805,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 55,
+  "line": 54,
   "name": "Add the Next Task",
   "description": "",
   "id": "time-sheet;add-the-next-task;;3",
@@ -723,18 +782,18 @@ formatter.scenario({
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 41,
+      "line": 40,
       "name": "@tag3"
     }
   ]
 });
 formatter.step({
-  "line": 43,
+  "line": 42,
   "name": "Click on Add Task",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 44,
+  "line": 43,
   "name": "Select the Next project Name as Zion",
   "matchedColumns": [
     0
@@ -742,7 +801,7 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 45,
+  "line": 44,
   "name": "Select the Next Task type as QA Testing",
   "matchedColumns": [
     1
@@ -750,7 +809,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 46,
+  "line": 45,
   "name": "Select the Next Mode of Request as TFS No",
   "matchedColumns": [
     2
@@ -758,23 +817,23 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 47,
-  "name": "Enter the Next Task Name as Analysing v3.4.0",
+  "line": 46,
+  "name": "Enter the Next Task Name as Analysing PBI 65659 and reviewing Test cases",
   "matchedColumns": [
     3
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 48,
-  "name": "Enter the Next Start Time as 5.15 pm",
+  "line": 47,
+  "name": "Enter the Next Start Time as 3.00 pm",
   "matchedColumns": [
     4
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 49,
+  "line": 48,
   "name": "Enter the Next End Time as 7.00 pm",
   "matchedColumns": [
     5
@@ -782,7 +841,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 50,
+  "line": 49,
   "name": "Click on Next Task Save button",
   "keyword": "Then "
 });
@@ -790,7 +849,7 @@ formatter.match({
   "location": "TimeSheetSteps.click_on_Add_Task()"
 });
 formatter.result({
-  "duration": 14598567672,
+  "duration": 31996992363,
   "status": "passed"
 });
 formatter.match({
@@ -803,9 +862,8 @@ formatter.match({
   "location": "TimeSheetSteps.select_the_Next_project_Name_as_ProjectName(String)"
 });
 formatter.result({
-  "duration": 145909163,
-  "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d80.0.3987.132)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027CIS20\u0027, ip: \u002710.77.21.54\u0027, os.name: \u0027Windows 7\u0027, os.arch: \u0027amd64\u0027, os.version: \u00276.1\u0027, java.version: \u00271.8.0_241\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\\Users\\karamach\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:24572}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 113d0582b70e42ab4c063d0eafdb8fc4\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:122)\r\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:44)\r\n\tat steps.TimeSheetSteps.select_the_Next_project_Name_as_ProjectName(TimeSheetSteps.java:176)\r\n\tat ✽.When Select the Next project Name as Zion(src/main/java/feature/TimeSheet.feature:44)\r\n",
-  "status": "failed"
+  "duration": 836278544,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -817,7 +875,8 @@ formatter.match({
   "location": "TimeSheetSteps.select_the_Next_Task_type_as_TaskType(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 155763224,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -829,31 +888,34 @@ formatter.match({
   "location": "TimeSheetSteps.select_the_Next_Mode_of_Request_as_MOR(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 30015289871,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Analysing v3.4.0",
+      "val": "Analysing PBI 65659 and reviewing Test cases",
       "offset": 28
     }
   ],
   "location": "TimeSheetSteps.enter_the_Next_Task_Name_as_Task(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 648534039,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "5.15 pm",
+      "val": "3.00 pm",
       "offset": 29
     }
   ],
   "location": "TimeSheetSteps.enter_the_Next_Start_Time_as_Start(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1213129650,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -865,12 +927,168 @@ formatter.match({
   "location": "TimeSheetSteps.enter_the_Next_End_Time_as_End(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2223959030,
+  "status": "passed"
 });
 formatter.match({
   "location": "TimeSheetSteps.click_on_Next_Task_Save_button()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 200352078,
+  "status": "passed"
+});
+formatter.scenarioOutline({
+  "comments": [
+    {
+      "line": 56,
+      "value": "#| Zion        | QA Testing | TFS No | Analysing and discussed with dev team for PBI 71693, 72366, 72351,               | 1.45 pm  | 7.00 pm  |"
+    }
+  ],
+  "line": 58,
+  "name": "Time Out",
+  "description": "",
+  "id": "time-sheet;time-out",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 57,
+      "name": "@tag4"
+    }
+  ]
+});
+formatter.step({
+  "line": 59,
+  "name": "Enter the Break time as \u003cBreak\u003e",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 60,
+  "name": "Enter the Out time as \u003cTimeout\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 61,
+  "name": "Enter the Save button",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 63,
+  "name": "",
+  "description": "",
+  "id": "time-sheet;time-out;",
+  "rows": [
+    {
+      "cells": [
+        "Break",
+        "Timeout"
+      ],
+      "line": 64,
+      "id": "time-sheet;time-out;;1"
+    },
+    {
+      "cells": [
+        "1.00",
+        "7.00 pm"
+      ],
+      "line": 65,
+      "id": "time-sheet;time-out;;2"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.scenario({
+  "line": 65,
+  "name": "Time Out",
+  "description": "",
+  "id": "time-sheet;time-out;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 57,
+      "name": "@tag4"
+    }
+  ]
+});
+formatter.step({
+  "line": 59,
+  "name": "Enter the Break time as 1.00",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 60,
+  "name": "Enter the Out time as 7.00 pm",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 61,
+  "name": "Enter the Save button",
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "1.00",
+      "offset": 24
+    }
+  ],
+  "location": "TimeSheetSteps.enter_the_Break_time_as(String)"
+});
+formatter.result({
+  "duration": 31792270902,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "7.00 pm",
+      "offset": 22
+    }
+  ],
+  "location": "TimeSheetSteps.enter_the_Out_time_as(String)"
+});
+formatter.result({
+  "duration": 30683795585,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TimeSheetSteps.enter_the_Save_button()"
+});
+formatter.result({
+  "duration": 140466722,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 68,
+  "name": "",
+  "description": "",
+  "id": "time-sheet;",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 67,
+      "name": "@tag5"
+    }
+  ]
+});
+formatter.step({
+  "line": 69,
+  "name": "Close the Broser",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "TimeSheetSteps.close_the_Broser()"
+});
+formatter.result({
+  "duration": 2275514040,
+  "status": "passed"
 });
 });

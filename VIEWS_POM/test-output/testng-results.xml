@@ -1,21 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65896" started-at="2020-03-19T12:20:43Z" finished-at="2020-03-19T12:21:49Z">
+  <suite name="Default suite" duration-ms="1235663" started-at="2020-04-28T07:03:14Z" finished-at="2020-04-28T07:23:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="65896" started-at="2020-03-19T12:20:43Z" finished-at="2020-03-19T12:21:49Z">
+    <test name="Default test" duration-ms="1235663" started-at="2020-04-28T07:03:14Z" finished-at="2020-04-28T07:23:49Z">
       <class name="testCase.TC003_WO_Quote">
-        <test-method status="PASS" signature="runDrive()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="runDrive" is-config="true" duration-ms="13057" started-at="2020-03-19T17:50:44Z" finished-at="2020-03-19T17:50:57Z">
+        <test-method status="PASS" signature="runDrive()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="runDrive" is-config="true" duration-ms="30100" started-at="2020-04-28T12:33:14Z" finished-at="2020-04-28T12:33:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runDrive -->
-        <test-method status="PASS" signature="workToQuoteComment()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="workToQuoteComment" duration-ms="52812" started-at="2020-03-19T17:50:57Z" finished-at="2020-03-19T17:51:49Z">
+        <test-method status="FAIL" signature="workToQuoteComment()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="workToQuoteComment" duration-ms="1205490" started-at="2020-04-28T12:33:44Z" finished-at="2020-04-28T12:53:49Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[timeout: Timed out receiving message from renderer: -0.004
+  (Session info: chrome=81.0.4044.122)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'CIS20', ip: '192.168.1.91', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\karamach\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:25001}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cfe2698d490b928e660038e3120929a0
+*** Element info: {Using=xpath, value=//select[@name='projectID']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.004
+  (Session info: chrome=81.0.4044.122)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'CIS20', ip: '192.168.1.91', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\karamach\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:25001}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cfe2698d490b928e660038e3120929a0
+*** Element info: {Using=xpath, value=//select[@name='projectID']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at page.WorkOrder.selectWOProject(WorkOrder.java:43)
+	at testCase.TC003_WO_Quote.workToQuoteComment(TC003_WO_Quote.java:23)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- workToQuoteComment -->
-        <test-method status="PASS" signature="closeDrive()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="closeDrive" is-config="true" duration-ms="0" started-at="2020-03-19T17:51:49Z" finished-at="2020-03-19T17:51:49Z">
+        <test-method status="PASS" signature="closeDrive()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="closeDrive" is-config="true" duration-ms="0" started-at="2020-04-28T12:53:49Z" finished-at="2020-04-28T12:53:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDrive -->

@@ -2,6 +2,7 @@ package page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import seleniumBase.SpecifiedBaseMethod;
 
@@ -26,7 +27,8 @@ public WorkOrder clickWorkOrder() throws InterruptedException{
 	
 	WebElement element = driver.findElement(By.xpath("//app-nav-link[@label='Work Order']/a//div/div"));
 	fwait(driver, element);	
-	element.click();
+	Actions act = new Actions(driver);
+	act.doubleClick(element).perform();;
 	return new WorkOrder();
 }
 }
