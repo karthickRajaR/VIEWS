@@ -19,10 +19,13 @@ public class WorkOrder extends SpecifiedBaseMethod{
 	
 	public WorkOrder enterFrame() {
 		try {
-		WebElement iframe = driver.findElement(By.className("pageIframe"));
-		driver.switchTo().frame(iframe);}catch (Exception except){
-			System.out.println("FRAME NOT FOUND");
-		}
+		WebElement iframe = driver.findElement(By.tagName("iframe"));
+		driver.switchTo().frame(iframe);
+		System.out.println("FRAME FOUND");
+		}catch (Exception except){
+			driver.switchTo().frame(0);
+			System.out.println("second FRAME FOUND");
+		};
 		
 		return this;
 	}
@@ -40,9 +43,11 @@ public WorkOrder ExitFrame() {
 	
 	
 	public WorkOrder selectWOProject() {	
-		WebElement project = driver.findElement(By.xpath("//select[@name='projectID']"));
-		Select dropdown = new Select(project);
-		dropdown.selectByVisibleText("Telstra");
+		WebElement projectdropdown = driver.findElement(By.xpath("//*[text()='Select Project']/.."));
+		Fwait(driver, projectdropdown);
+		Select dropdown = new Select(projectdropdown);
+		dropdown.selectByVisibleText(Constant.project);
+		System.out.println("Project selected as "+ Constant.project);
 		return this;	
 	}
 
@@ -88,7 +93,7 @@ public WorkOrder ExitFrame() {
 		
 		Set<String> s1=driver.getWindowHandles();		
         Iterator<String> i1=s1.iterator();
-		System.out.println(i1);
+		System.out.println("window = " + i1);
 		
 	}
 	

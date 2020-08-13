@@ -2,36 +2,34 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1235663" started-at="2020-04-28T07:03:14Z" finished-at="2020-04-28T07:23:49Z">
+  <suite name="Default suite" duration-ms="56936" started-at="2020-07-03T09:16:27Z" finished-at="2020-07-03T09:17:24Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1235663" started-at="2020-04-28T07:03:14Z" finished-at="2020-04-28T07:23:49Z">
+    <test name="Default test" duration-ms="56936" started-at="2020-07-03T09:16:27Z" finished-at="2020-07-03T09:17:24Z">
       <class name="testCase.TC003_WO_Quote">
-        <test-method status="PASS" signature="runDrive()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="runDrive" is-config="true" duration-ms="30100" started-at="2020-04-28T12:33:14Z" finished-at="2020-04-28T12:33:44Z">
+        <test-method status="PASS" signature="runDrive()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="runDrive" is-config="true" duration-ms="18784" started-at="2020-07-03T14:46:27Z" finished-at="2020-07-03T14:46:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runDrive -->
-        <test-method status="FAIL" signature="workToQuoteComment()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="workToQuoteComment" duration-ms="1205490" started-at="2020-04-28T12:33:44Z" finished-at="2020-04-28T12:53:49Z">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method status="FAIL" signature="workToQuoteComment()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="workToQuoteComment" duration-ms="38080" started-at="2020-07-03T14:46:46Z" finished-at="2020-07-03T14:47:24Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
             <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: -0.004
-  (Session info: chrome=81.0.4044.122)
+              <![CDATA[no such frame
+  (Session info: chrome=83.0.4103.116)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'CIS20', ip: '192.168.1.91', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\karamach\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:25001}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: cfe2698d490b928e660038e3120929a0
-*** Element info: {Using=xpath, value=//select[@name='projectID']}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\karamach\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:9374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bb4331222ed33547c8f8558ccd73dfb9]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.004
-  (Session info: chrome=81.0.4044.122)
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: no such frame
+  (Session info: chrome=83.0.4103.116)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'CIS20', ip: '192.168.1.91', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_241'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.122, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\karamach\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:25001}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: cfe2698d490b928e660038e3120929a0
-*** Element info: {Using=xpath, value=//select[@name='projectID']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\karamach\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:9374}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: bb4331222ed33547c8f8558ccd73dfb9
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -42,12 +40,9 @@ Session ID: cfe2698d490b928e660038e3120929a0
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at page.WorkOrder.selectWOProject(WorkOrder.java:43)
-	at testCase.TC003_WO_Quote.workToQuoteComment(TC003_WO_Quote.java:23)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:868)
+	at page.WorkOrder.enterFrame(WorkOrder.java:26)
+	at testCase.TC003_WO_Quote.workToQuoteComment(TC003_WO_Quote.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -74,11 +69,11 @@ Session ID: cfe2698d490b928e660038e3120929a0
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- workToQuoteComment -->
-        <test-method status="PASS" signature="closeDrive()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="closeDrive" is-config="true" duration-ms="0" started-at="2020-04-28T12:53:49Z" finished-at="2020-04-28T12:53:49Z">
+        <test-method status="PASS" signature="closeDrive()[pri:0, instance:testCase.TC003_WO_Quote@66a3ffec]" name="closeDrive" is-config="true" duration-ms="1" started-at="2020-07-03T14:47:24Z" finished-at="2020-07-03T14:47:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDrive -->

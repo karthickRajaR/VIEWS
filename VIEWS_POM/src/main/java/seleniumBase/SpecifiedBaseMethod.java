@@ -16,7 +16,7 @@ import org.testng.annotations.BeforeMethod;
 
 import utils.Constant;
 
-public class SpecifiedBaseMethod {
+public class SpecifiedBaseMethod   {
 	public static ChromeDriver driver;
 	
 
@@ -64,7 +64,7 @@ public void parentwindow() {
 @BeforeMethod
 
  public void runDrive() throws InterruptedException {
-System.setProperty("webdriver.chrome.driver", "D:\\ChromeDriver\\chromedriver_win32\\chromedriver.exe");
+System.setProperty("webdriver.chrome.driver", "D:\\chromeDriver\\chromedriver.exe");
  driver = new ChromeDriver();
  driver.manage().window().maximize();
  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

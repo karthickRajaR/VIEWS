@@ -24,13 +24,15 @@ public class TimeSheetSteps {
 
 	public static ChromeDriver driver;
 
-	FluentWait<WebDriver> wait;
+	FluentWait<WebDriver> waitele;
 
 	public void waitForStaleEle(WebDriver driver, WebElement locator) throws InterruptedException {
-		wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
-				.pollingEvery(Duration.ofMillis(1000)).ignoring(NoSuchElementException.class);
+		waitele = new FluentWait<WebDriver>(driver)
+				.withTimeout(Duration.ofSeconds(30))
+				.pollingEvery(Duration.ofMillis(1000))
+				.ignoring(NoSuchElementException.class);
 		try {
-			wait.until(ExpectedConditions.stalenessOf(locator));
+			waitele.until(ExpectedConditions.stalenessOf(locator));
 		} catch (Exception excep) {
 			Thread.sleep(1000);
 		}
@@ -38,7 +40,7 @@ public class TimeSheetSteps {
 
 	@Given("^Open the Browser$")
 	public void open_the_Browser() throws Throwable {
-		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "D:\\chromeDriver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -103,8 +105,13 @@ public class TimeSheetSteps {
 
 	@Given("^Click on Edit button$")
 	public void click_on_Edit_button() throws Throwable {
+		WebElement editelement = driver.findElement(By.xpath("(//tr[@class='gridHeaderBG']//following::input)[1]"));
 
-		driver.findElement(By.xpath("//tr[@class='gridHeaderBG']//following::input)[1]")).click();
+  editelement.click();
+
+		
+		
+
 	}
 
 	@When("^Select the project Name as (.*)$")
@@ -254,16 +261,19 @@ public class TimeSheetSteps {
 
 	@Given("^Enter the Out time as (.*)$")
 	public void enter_the_Out_time_as(String Timeout) {
+		WebElement timeoutelement = driver.findElement(By.xpath("(//input[contains(@id,'txtTimeOut')])[1]"));
 		try {
-		wait.until(ExpectedConditions.stalenessOf(driver.findElement(By.xpath("(//input[contains(@id,'txtTimeOut')])[1]"))));
-	 driver.findElement(By.xpath("(//input[contains(@id,'txtTimeOut')])[1]")).sendKeys(Timeout);} catch (Exception except) {
-		 driver.findElement(By.xpath("(//input[contains(@id,'txtTimeOut')])[1]")).sendKeys(Timeout);
+		waitele.until(ExpectedConditions.stalenessOf(timeoutelement));
+		timeoutelement.sendKeys(Timeout);
+		} catch (Exception except) {
+			
+			timeoutelement.sendKeys(Timeout);
 	 }
 	}
 
 	@Then("^Enter the Save button$")
 	public void enter_the_Save_button() throws Throwable {
-	driver.findElement(By.xpath("//input[contains(@value,'Save')]")).click();
+	driver.findElement(By.xpath("//input[@value='Save']")).click();
 	}
 
 

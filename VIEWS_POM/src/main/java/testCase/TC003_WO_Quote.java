@@ -1,5 +1,6 @@
 package testCase;
 
+import org.testng.annotations.Test;
 import java.awt.AWTException;
 
 import org.testng.annotations.Test;
@@ -17,6 +18,7 @@ public void workToQuoteScope() throws InterruptedException {
 	.clickWOQuotes().enterFrame().clickWOQuotesEdit().enterScope().clickSave();
 }
 @Test(enabled=true)
+
 public void workToQuoteComment() throws InterruptedException, AWTException {
 
 	new LoginPage().enterUserName().enterPassword().clickLogin()

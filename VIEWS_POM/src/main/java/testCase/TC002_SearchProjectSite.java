@@ -1,6 +1,7 @@
 package testCase;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import page.LoginPage;
 import seleniumBase.SpecifiedBaseMethod;

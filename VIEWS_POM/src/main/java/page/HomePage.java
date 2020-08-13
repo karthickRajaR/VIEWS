@@ -2,6 +2,7 @@ package page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 import seleniumBase.SpecifiedBaseMethod;
@@ -18,14 +19,18 @@ public class HomePage  extends SpecifiedBaseMethod {
 	
 	
 public ProjectSitePage clickProjectSites() throws InterruptedException  {
-		driver.findElement(By.xpath("//a[@mattooltip='Project Sites']")).click();
+	
+		WebElement prosite = driver.findElement(By.xpath("//span[text()='Project Site']"));
+		Actions act = new Actions(driver);
+		act.doubleClick(prosite).perform();
+		
 		Thread.sleep(3000);
 		return new ProjectSitePage();
 	}
 
 public WorkOrder clickWorkOrder() throws InterruptedException{
 	
-	WebElement element = driver.findElement(By.xpath("//app-nav-link[@label='Work Order']/a//div/div"));
+	WebElement element = driver.findElement(By.xpath("//div[@class='nav-body-item is-active']"));
 	fwait(driver, element);	
 	Actions act = new Actions(driver);
 	act.doubleClick(element).perform();;

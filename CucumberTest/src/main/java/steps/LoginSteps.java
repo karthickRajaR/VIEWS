@@ -18,8 +18,7 @@ public class LoginSteps {
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		 driver = new ChromeDriver();
 		 driver.manage().window().maximize();
-		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
+		 driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);	
 	}
 
 	@Given("^Enter the URL$")

@@ -34,8 +34,8 @@ Feature: Time Sheet
     Then Click on Task Save button
 
     Examples: 
-      | ProjectName | TaskType   | MOR    | Task                | Start   | End      |
-      | Zion        | QA Testing | TFS No | Phone calls and GTM | 9.00 am | 10.00 am |
+      | ProjectName | TaskType   | MOR    | Task                                            | Start   | End      |
+      | Zion        | QA Testing | TFS No | Phone calls and GTM  | 9.00 am | 11.00 aM |
 
   @tag3
   Scenario Outline: Add the Next Task
@@ -49,11 +49,12 @@ Feature: Time Sheet
     Then Click on Next Task Save button
 
     Examples: 
-      | ProjectName | TaskType   | MOR    | Task                                         | Start    | End     |
-      | Zion        | QA Testing | TFS No | Reviewing TFS bugs in 3.4.3 snd 3.4.4        | 10.00 am | 2.00 pm |
-      | Zion        | QA Testing | TFS No | Analysing PBI 65659 and reviewing Test cases | 3.00 pm  | 7.00 pm |
+      | ProjectName | TaskType   | MOR    | Task                                                                                                                                       | Start    | End      |
+      | Zion        | QA Testing | TFS No | Internal - Testing done for v3.6 for SIT and UAT   | 11.00 am | 1.00 pm |
+      | Zion        | QA Testing | TFS No | Mobile testing and high level regression in UAT   | 2.30 pm  | 7.00 pm  |
+     # | Zion        | QA Testing | TFS No | Testing done in data PBI 65659                                                                                                             | 5.30 pm  | 7.30 pm  |
 
-  #| Zion        | QA Testing | TFS No | Analysing and discussed with dev team for PBI 71693, 72366, 72351,               | 1.45 pm  | 7.00 pm  |
+  #| Zion        | QA Testing | TFS No | Data Management  - PBI 72538  -Test case prepared and Testing has been done in SIT and Prod  for Test Suite : Data Management_PVT_20200507 | 6.00 pm  | 8.00 pm  |
   @tag4
   Scenario Outline: Time Out
     Given Enter the Break time as <Break>
@@ -62,7 +63,7 @@ Feature: Time Sheet
 
     Examples: 
       | Break | Timeout |
-      |  1.00 | 7.00 pm |
+      |  1.00 | 8.00 pm |
 
   @tag5
   Scenario: 

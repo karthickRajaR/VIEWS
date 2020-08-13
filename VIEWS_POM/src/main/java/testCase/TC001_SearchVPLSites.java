@@ -8,13 +8,13 @@ import seleniumBase.SpecifiedBaseMethod;
 
 public class TC001_SearchVPLSites extends SpecifiedBaseMethod {
 
-	@Parameters({ "UserName", "PassWord" })
+	//@Parameters({ "UserName", "PassWord" })
 	@Test
 
 	public void searchSiteID() {
 
 		new LoginPage().enterUserName().enterPassword().clickLogin();
-		// .enterPassword().clickLogin()
+		 // .enterPassword().clickLogin()
 		// .clickVPLSites().enterFrame().enterSiteId()
 		// .clickVPLSearchButton().exitFrame();
 
